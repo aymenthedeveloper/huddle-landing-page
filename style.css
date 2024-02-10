@@ -27,13 +27,15 @@
     grid-template-columns: 1.4fr 1fr;
     min-height: calc(100vh - 140px);
     column-gap: calc(var(--padx)/ 2);
+    box-sizing: border-box;
+    padding: 20px 0;
   }
   .illustration{
     display: grid;
     place-items: center;
   }
   .illustration img{
-    width: 90%;
+    width: 100%;
   }
   .hero {
     display: flex;
@@ -99,9 +101,7 @@
     body{
       background-image: url(images/bg-mobile.svg);
     }
-    .illustration img{
-      width: 80%;
-    }
+
     .hero {
       margin-top: 20px;
       text-align: center;
